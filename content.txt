@@ -1,0 +1,18 @@
+gameit
+
+Gameit is a game recommandation and game testing site. Gamer can share 
+your comment and range for the game they played. And test the games other 
+gamers recommanded.
+
+my games:
+Knack2
+Roblox
+Minecraft
+Chess
+
+
+Friends' recommandation:
+hole.io
+paper.io
+
+
