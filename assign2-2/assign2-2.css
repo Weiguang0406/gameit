@@ -1,0 +1,95 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.radiocontainer {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkboxcontainer {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radiocontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkboxcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.radiocheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.checkboxcheckmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.radiocheckmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radiocontainer input:checked ~ .radiocheckmark:after {
+  display: block;
+}
+
+.radiocontainer .radiocheckmark:after {
+  left: 15px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0px 2px 2px 0px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkboxcheckmark:after {
+  content: "X";
+  position: absolute;
+  display: none;
+}
+
+.checkboxcontainer input:checked ~ .checkboxcheckmark:after {
+  display: block;
+}
+
+.checkboxcontainer .checkboxcheckmark:after {
+  left: 15px;
+  top: 0px;
+  content: "X";
+}
