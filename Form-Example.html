@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article>
+      <h2>Form example 1</h2>
+      <form action="form-example.php" method="post">
+        <label for="fname">Fristname:</label><br />
+        <input type="text" /><br />
+        <label for="lname">lastname:</label><br />
+        <input type="text" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </article>
+    <article>
+      <h2>Form example 2: post to current page</h2>
+      <form action="#" id="userlogin" method="post">
+        <div>
+          <label for="username">username:</label><br />
+          <input type="text" name="username" id="username" /><br />
+        </div>
+        <div>
+          <label for="passwd">password:</label><br />
+          <input type="text" name="password" id="password" /><br /><br />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </article>
+
+    <article>
+      <h2>Form example 3: get action</h2>
+      <form action="/" id="userlogin" method="get">
+        <div>
+          <label for="username">username:</label><br />
+          <input type="text" name="username" id="username" /><br />
+        </div>
+        <input type="submit" value="search" />
+      </form>
+    </article>
+    <article>
+      <div>
+        <h2>Form example 4: listed/nested input</h2>
+        <ol>
+          <li>
+            <label for="favoratecolor"
+              >favorate color <br />
+              <input
+                type="text"
+                name="favoratecolor"
+                placeholder="favorite color"
+                maxlength="10"
+              />
+            </label>
+          </li>
+        </ol>
+        <input type="submit" value="Submit" />
+      </div>
+    </article>
+
+    <article>
+      <h2>Form example 5: textarea</h2>
+      <form action="#" id="userlogin" method="post">
+        <div>
+          <label for="usernames">usernames:</label><br />
+          <textarea rows="5" placeholder="No more than 5 rows"></textarea>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </article>
+    <article>
+      <h2>Form example 5:radio button</h2>
+      <h3>Important: input name should be the same, so that only one option can be selected.</h3>
+      <form action="#" id="languages" method="post">
+        <div>
+          <input type="radio" name="fav_language" id="html" value="html"/>
+          <label for="HTML">HTML</label><br />
+          <div>
+          <input type="radio" name="fav_language" id="css" value="css"/>
+          <label for="css">CSS</label><br />
+        </div>
+        <div>
+          <input type="radio" name="fav_language" id="javaScript" value="javascript" />
+          <label for="javaScript">javaScript</label><br />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </article>
+
+    <article>
+      <h2>Form example 5:checkbox</h2>
+      <form action="#" id="languagespoken" method="post">
+        <div>
+          <input type="checkbox" name="eng" id="eng" />
+          <label for="eng">English</label><br />
+          <input type="checkbox" name="fr" id="fr" />
+          <label for="fr">French</label><br />
+          <input type="checkbox" name="cn" id="cn" />
+          <label for="cn">Chinese</label><br />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </article>
+  </body>
+</html>
