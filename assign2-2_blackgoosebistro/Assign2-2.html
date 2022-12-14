@@ -10,128 +10,147 @@
   </head>
   <body>
     <header>
-      <h2>Black Googse Bistro &#9475 Pizza-on-Demand</h2>
-      <p style="white-space: pre; font-size: large">
-Our 1 2" wood-fired pizza are available for delivery.Build your custom
-pizza and we'll deliver it within an hour.
+      <h2>Black Googse Bistro &#9475; Pizza-on-Demand</h2>
+      <p style="font-size: large; margin: 0px 0px 0px 0px">
+        Our 1 2" wood-fired pizza are available for delivery.Build your
+        <br />custom pizza and we'll deliver it within an hour.
       </p>
     </header>
 
     <form action="http://blackgoosebistro.com/pizza.php" method="post">
-      <p>Your Infromation</p>
-      <label for="name"> Name</label>
-      <input type="text" name="customername" id="customername" /><br />
-      <label for="address">Address</label>
-      <input type="text" name="address" id="address" /><br />
-      <label for="telephone">Telephone Number</label>
-      <input type="text" name="telephone" id="telephone" /><br />
-      <label for="email">Email</label>
-      <input type="text" name="email" id="email" /><br />
-      <label for="delivery">Delivery instructions</label><br />
-      <textarea
-        name="instructions"
-        rows="8"
-        cols="50"
-        maxlength="400"
-        placeholder="no more than 400 characters long"
-        id="delivery"
-      ></textarea>
-      <p>
-        <strong>Design Your Dream Pizza</strong><br />
-        Pizza specs
-      </p>
+      <div>
+        <p>Your Infromation</p>
+        <div>
+          <label for="name"> Name</label>
+          <input type="text" name="customername" id="customername" /><br />
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" /><br />
+        </div>
+        <div>
+          <label for="telephone">Telephone Number</label>
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            require
+          /><br />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" /><br />
+        </div>
+        <div></div>
+        <label for="delivery">Delivery instructions</label><br />
+        <textarea
+          name="instructions"
+          rows="8"
+          cols="50"
+          maxlength="400"
+          placeholder="no more than 400 characters long"
+          id="delivery"
+        ></textarea>
+      </div>
+      <div>
+        <p>
+          <strong>Design Your Dream Pizza</strong><br />
+          Pizza specs
+        </p>
 
-      <p>Crust(Choose one):</p>
+        <p>Crust(Choose one):</p>
 
-      <label class="radiocontainer" for="classicwhite"
-        >( &nbsp) Classicwhite
-        <input
-          type="radio"
-          name="crustchoise"
-          value="classicwhite"
-          id="classicwhite"
-        />
-        <span class="radiocheckmark"></span>
-      </label>
+        <label class="radiocontainer" for="classicwhite"
+          >( &nbsp) Classicwhite
+          <input
+            type="radio"
+            name="crustchoise"
+            value="classicwhite"
+            id="classicwhite"
+          />
+          <span class="radiocheckmark"></span>
+        </label>
 
-      <label class="radiocontainer" for="multigrain"
-        >( &nbsp) Multigrai
-        <input
-          type="radio"
-          name="crustchoise"
-          value="multigrain"
-          id="multigrain"
-        />
-        <span class="radiocheckmark"></span>
-      </label>
+        <label class="radiocontainer" for="multigrain"
+          >( &nbsp) Multigrai
+          <input
+            type="radio"
+            name="crustchoise"
+            value="multigrain"
+            id="multigrain"
+          />
+          <span class="radiocheckmark"></span>
+        </label>
 
-      <label class="radiocontainer" for="chees-stuffed"
-        >(&nbsp ) Chees-stuffed crust
-        <input type="radio" name="crustchoise" id="chees-stuffed" />
-        <span class="radiocheckmark"></span>
-      </label>
+        <label class="radiocontainer" for="chees-stuffed"
+          >(&nbsp ) Chees-stuffed crust
+          <input type="radio" name="crustchoise" id="chees-stuffed" />
+          <span class="radiocheckmark"></span>
+        </label>
 
-      <label class="radiocontainer" for="glutten-free"
-        >(&nbsp&nbsp) Glutten-free
-        <input type="radio" name="crustchoise" id="glutten-free" />
-        <span class="radiocheckmark"></span>
-      </label>
-      <p>Toppings(Choose as many as you want):</p>
+        <label class="radiocontainer" for="glutten-free"
+          >(&nbsp&nbsp) Glutten-free
+          <input type="radio" name="crustchoise" id="glutten-free" />
+          <span class="radiocheckmark"></span>
+        </label>
+        <p>Toppings(Choose as many as you want):</p>
 
-      <label class="checkboxcontainer" for="redsause"
-        >[&nbsp&nbsp] Red sauce
-        <input type="checkbox" name="toppings" id="redsause" />
-        <span class="checkboxcheckmark"></span>
-      </label>
+        <label class="checkboxcontainer" for="redsause"
+          >[&nbsp&nbsp] Red sauce
+          <input type="checkbox" name="toppings" id="redsause" />
+          <span class="checkboxcheckmark"></span>
+        </label>
 
-      <label class="checkboxcontainer" for="whitsause"
-        >[&nbsp&nbsp] White sauce
-        <input type="checkbox" name="toppings" id="whitsause" />
-        <span class="checkboxcheckmark"></span>
-      </label>
+        <label class="checkboxcontainer" for="whitsause"
+          >[&nbsp&nbsp] White sauce
+          <input type="checkbox" name="toppings" id="whitsause" />
+          <span class="checkboxcheckmark"></span>
+        </label>
 
-      <label class="checkboxcontainer" for="mozzarella"
-        >[&nbsp&nbsp] Mozzarella Cheese
-        <input type="checkbox" name="toppings" id="mozzarella" />
-        <span class="checkboxcheckmark"></span>
-      </label>
+        <label class="checkboxcontainer" for="mozzarella"
+          >[&nbsp&nbsp] Mozzarella Cheese
+          <input type="checkbox" name="toppings" id="mozzarella" />
+          <span class="checkboxcheckmark"></span>
+        </label>
 
-      <label class="checkboxcontainer" for="pepperoni"
-        >[&nbsp&nbsp] Pepperoni
-        <input type="checkbox" name="toppings" id="pepperoni" />
-        <span class="checkboxcheckmark"></span>
-      </label>
+        <label class="checkboxcontainer" for="pepperoni"
+          >[&nbsp&nbsp] Pepperoni
+          <input type="checkbox" name="toppings" id="pepperoni" />
+          <span class="checkboxcheckmark"></span>
+        </label>
 
-      <label class="checkboxcontainer" for="mushrooms"
-        >[&nbsp&nbsp] Mushrooms
-        <input type="checkbox" name="toppings" id="mushrooms" />
-        <span class="checkboxcheckmark"></span>
-      </label>
+        <label class="checkboxcontainer" for="mushrooms"
+          >[&nbsp&nbsp] Mushrooms
+          <input type="checkbox" name="toppings" id="mushrooms" />
+          <span class="checkboxcheckmark"></span>
+        </label>
 
-      <label class="checkboxcontainer" for="peppers"
-        >[&nbsp&nbsp] Peppers
-        <input type="checkbox" name="toppings" id="peppers" />
-        <span class="checkboxcheckmark"></span>
-      </label>
+        <label class="checkboxcontainer" for="peppers"
+          >[&nbsp&nbsp] Peppers
+          <input type="checkbox" name="toppings" id="peppers" />
+          <span class="checkboxcheckmark"></span>
+        </label>
 
-      <label class="checkboxcontainer" for="anchovies"
-        >[&nbsp&nbsp] Anchovies
-        <input type="checkbox" name="toppings" id="anchovies" />
-        <span class="checkboxcheckmark"></span>
-      </label>
-      <br />
-      <p>
-        Number<br />
-        How mangy pizzas:
-        <select class="custom-select" style="width: 30px; height: 30px">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-        </select>
-      </p>
+        <label class="checkboxcontainer" for="anchovies"
+          >[&nbsp&nbsp] Anchovies
+          <input type="checkbox" name="toppings" id="anchovies" />
+          <span class="checkboxcheckmark"></span>
+        </label>
+        <br />
+        <p>
+          Number<br />
+          How mangy pizzas:
+          <select class="custom-select" style="width: 30px; height: 30px">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </p>
+      </div>
       <input type="submit" value="Bring me a pizza" />
       <button><a href="Assign2-2.html"> Reset</a></button>
     </form>
