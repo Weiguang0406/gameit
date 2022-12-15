@@ -1,0 +1,11 @@
+h1 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 100px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: wavy;
+  text-decoration-color: rgb(241, 121, 121);
+  text-decoration-line: underline;
+  letter-spacing: 20px;
+}
