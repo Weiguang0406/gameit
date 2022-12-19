@@ -1,0 +1,92 @@
+body {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Audiowide", sans-serif;
+  color: #66bfbf;
+}
+
+h2 {
+  color: #66bfbf;
+}
+h3 {
+  color: #11999e;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/* :before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+.top-container {
+  background-color: #e0ebe8;
+  margin: auto auto auto auto;
+}
+
+#header-logo {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 30%;
+  float: left;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+#header-nav {
+  width: 66%;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  justify-content: space-between;
+}
+#nav-margin {
+  margin-left: 15px;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 20%;
+}
+
+.skill-row {
+  width: 60%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.skill-img {
+  width: 25%;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill2-img {
+  border-radius: 50%;
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}

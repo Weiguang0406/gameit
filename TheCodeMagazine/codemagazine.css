@@ -16,8 +16,10 @@ footer p {
   font-size: 12px;
 }
 h1 {
-  font-size: 50px;
+  font-size: 20px;
+  text-align: center;
   font-family: sans-serif;
+  top: -10px;
 }
 h2 {
   font-size: 30px;
@@ -26,9 +28,50 @@ h2 {
   text-align: start;
 }
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: sans-serif;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 h4 {
+  font-size: 
   font-style: italic;
+}
+
+body {
+  font-family: sans-serif;
+  border-top: black solid 5px;
+}
+nav {
+  margin: 0px auto;
+  padding-top: 0px;
+  width: 800px;
+  background-color: grey;
+}
+.container {
+  width: 800px;
+  margin: 0px auto;
+}
+
+.post-header {
+}
+article {
+  margin-top: 20px;
+}
+
+aside {
+  margin-left: 0px;
+  margin-bottom: 20px;
+  width: 500px;
+  border-top: 5px green solid;
+  border-bottom: 5px green solid;
+  border-left: 1px green solid;
+  border-right: 1px green solid;
+}
+
+.related {
+  border-top: 5px green solid;
+  border-bottom: 5px green solid;
+  border-left: 1px green solid;
+  border-right: 1px green solid;
 }
