@@ -1,7 +1,78 @@
 body {
+  background-color: #ffffff;
   text-align: center;
 }
 
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Audiowide", sans-serif;
+  color: #66bfbf;
+}
+
+h2 {
+  color: #66bfbf;
+}
+h3 {
+  color: #11999e;
+}
+p {
+  color: black;
+  font-size: 1em;
+  font-family: "Rubik", sans-serif;
+}
 #projectdemo-top {
-  background-color: #e0ebe8;
+  background-color: #bbf5e5;
+  height: 72px;
+  margin: 0px auto 0px auto;
+}
+
+#header-logo {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 30%;
+  height: 72px;
+  float: left;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
+
+#header-nav {
+  width: 66%;
+  height: 72px;
+  float: left;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  justify-content: space-between;
+}
+#top-nav {
+  position: relative;
+  float: right;
+  margin-top: 15px;
+}
+#nav-menu-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+#nav-li {
+  float: left;
+}
+#nav-li a {
+  display: block;
+  color: rgb(27, 2, 95);
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+#nav-li a:hover {
+  background-color: #e4dede;
+  text-decoration-line: underline;
+}
+.profile-img {
+  border-radius: 50%;
+  width: 20%;
 }
