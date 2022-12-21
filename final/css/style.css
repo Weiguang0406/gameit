@@ -1,0 +1,75 @@
+/* GLOBAL STYLES do not touch this -----------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*    Your NAME goes here and place your css after this comment    */
+/* Weiguang Yang 1995991 */
+
+header {
+  /* background-color: navy; */
+  padding: 150px 0px 150px 0px;
+  text-align: center;
+}
+
+body {
+  font-family: "Merriweather,serif";
+  line-height: 1.5;
+  background-image: url("background.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  margin: 0px 0px 0px 0px;
+}
+
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 80px;
+}
+h2 {
+  font-size: 32px;
+}
+.profile {
+  background-color: purple;
+  /* width: 1000px;
+  margin: 0px auto 0px auto; */
+}
+.wrapper {
+  max-width: 1000px;
+  width: 80%;
+  text-align: center;
+  margin: 0px auto 0px auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.work-container {
+  background-color: rgb(187, 240, 222);
+}
+.skill-container {
+  background-color: rgb(221, 223, 226);
+}
+
+.edu-container {
+  background-color: antiquewhite;
+}
+.contact-container {
+  background-color: coral;
+}

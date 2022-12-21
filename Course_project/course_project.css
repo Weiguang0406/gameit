@@ -70,6 +70,13 @@ summary {
   position: relative;
   float: right;
   margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .top-nav {
+    flex-direction: column;
+  }
 }
 #nav-menu-ul {
   list-style-type: none;
@@ -119,3 +126,4 @@ summary {
 
 .contact-me {
 }
+

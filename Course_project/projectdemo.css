@@ -1,78 +1,70 @@
-body {
-  background-color: #ffffff;
+.header {
+  padding: 30px;
   text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  display: grid;
+  place-items: center;
 }
 
-h1 {
-  font-size: 25px;
-  font-weight: bold;
-  font-family: "Audiowide", sans-serif;
-  color: #66bfbf;
+.title-word {
+  animation: color-animation 4s linear infinite;
 }
 
-h2 {
-  color: #66bfbf;
-}
-h3 {
-  color: #11999e;
-}
-p {
-  color: black;
-  font-size: 1em;
-  font-family: "Rubik", sans-serif;
-}
-#projectdemo-top {
-  background-color: #bbf5e5;
-  height: 72px;
-  margin: 0px auto 0px auto;
+.title-word-1 {
+  --color-1: #df8453;
+  --color-2: #3d8dae;
+  --color-3: #e4a9a8;
 }
 
-#header-logo {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
-  width: 30%;
-  height: 72px;
-  float: left;
-  position: relative;
-  display: block;
-  box-sizing: border-box;
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
 }
 
-#header-nav {
-  width: 66%;
-  height: 72px;
-  float: left;
-  position: relative;
-  box-sizing: border-box;
-  display: block;
-  justify-content: space-between;
+.title-word-3 {
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb;
 }
-#top-nav {
-  position: relative;
-  float: right;
-  margin-top: 15px;
+
+.title-word-4 {
+  --color-1: #3d8dae;
+  --color-2: #df8453;
+  --color-3: #e4a9a8;
 }
-#nav-menu-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
 }
-#nav-li {
-  float: left;
-}
-#nav-li a {
-  display: block;
-  color: rgb(27, 2, 95);
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-#nav-li a:hover {
-  background-color: #e4dede;
-  text-decoration-line: underline;
-}
-.profile-img {
-  border-radius: 50%;
-  width: 20%;
+
+/* Here are just some visual styles. 🖌 */
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
