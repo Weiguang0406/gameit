@@ -9,6 +9,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="projectdemo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <title>Weiguang_projectdemo</title>
   </head>
   <body>
@@ -22,38 +30,43 @@
         </h2>
       </div>
     </header>
-    <nav class="navbar row">
-      <div class="col-3">
-        <div>
-          <button class="btn btn-danger">GameIt</button>
+    <div class="container">
+      <nav class="navbar row">
+        <div class="col-3">
+          <div>
+            <button class="btn btn-danger logo-design">LOGO</button>
+          </div>
         </div>
-      </div>
-      <div class="col-7">
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Kids games</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">12-18</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">18+games</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-2 float-end">
-        <button class="btn btn-info">
-          <a href="signin.html"> Sign In</a>
-        </button>
+        <div class="col-7 top-nav">
+          <ul class="nav justify-content-start">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kids games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">12-18</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">18+games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forum</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2 float-end">
+          <button class="btn btn-info">
+            <a href="signin.html"> Sign In</a>
+          </button>
 
-        <button class="btn btn-light">
-          <a href="register.html">Register</a>
-        </button>
-      </div>
-    </nav>
+          <button class="btn btn-light">
+            <a href="register.html">Register</a>
+          </button>
+        </div>
+      </nav>
+    </div>
     <main>
       <!-- Slideshow container -->
       <div class="slideshow-container">
@@ -100,68 +113,230 @@
 
       <section>
         <div class="container">
-          <h1>All Games</h1>
+          <div class="row">
+            <div class="col-6">
+            <h2 class="col-5">Discover Games</h2>
+          </div>
+          <div class="col-3">
+            <form action="www.google.com">
+              <input type="text" placeholder="Search..." name="search">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+          <div class="col-3">
+            <a href="#" class="col col-5 text-end"><h4 class="text-center">More...</h4></a>
+          </div>
+          </div>
+
           <div class="row">
             <div class="col col-2">
-              <img src="images/games/games.png" class="gallary-img" alt="" />
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-2 justify-content-center">
+              <figure>
+                <img src="images/games/roblox.jpg" class="gallary-img" alt="" />
+                <figcaption class="text-center">Roblox</figcaption>
+              </figure>
+            </div>
+            <div class="col-2">
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
+            </div>
+            <div class="col-2">
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
+            </div>
+            <div class="col-2">
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
+            </div>
+            <div class="col-2">
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col col-2">
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
             </div>
             <div class="col-md-2">
-              <img src="images/games/games.jpg" class="gallary-img" alt="" />
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
             </div>
             <div class="col-2">
-              <img src="images/games/games.jpg" class="gallary-img" alt="" />
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
             </div>
             <div class="col-2">
-              <img src="images/games/games.jpg" class="gallary-img" alt="" />
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
             </div>
             <div class="col-2">
-              <img src="images/games/games.jpg" class="gallary-img" alt="" />
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
             </div>
             <div class="col-2">
-              <img src="images/games/games.jpg" class="gallary-img" alt="" />
+              <figure>
+                <img
+                  src="images/games/game-imgholder.jpg"
+                  class="gallary-img"
+                  alt=""
+                />
+                <figcaption class="text-center">Game_Name</figcaption>
+              </figure>
             </div>
           </div>
         </div>
         <hr />
         <div class="container">
-          <h2>New Games</h2>
+          <h2>Upcoming Games</h2>
           <table class="table">
             <tr>
-              <th></th>
+              <th id="cominggm-th">Games</th>
               <th>Description</th>
               <th>Coming Date</th>
               <th></th>
             </tr>
             <tr>
-              <td><img src="images/games/games.jpg" alt="" /></td>
-              <td>Fun game, need to try.......</td>
+              <td>
+                <a href="https://www.playstation.com/en-ca/games/dreams/">
+                  <img
+                    src="images/games/dreams.webp"
+                    class="table-img"
+                    alt=""
+                  />
+                </a>
+              </td>
+              <td>
+                Fun game, need to try.......
+                <a href="https://www.playstation.com/en-ca/games/dreams/"
+                  >Know More</a
+                >
+              </td>
               <td>2023/1/10</td>
               <td>
-                <button class="btn btn-primary">Register as tester</button>
+                <a href="register.html"
+                  ><button class="btn btn-primary">
+                    Register to be tester
+                  </button></a
+                >
               </td>
             </tr>
             <tr>
-              <td><img src="images/games/games.jpg" alt="" /></td>
-              <td>Fun game, need to try.......</td>
+              <td>
+                <a
+                  href="https://www.playstation.com/en-ca/games/astro-bot-rescue-mission/"
+                  ><img
+                    src="images/games/Astro-Bot.webp"
+                    class="table-img"
+                    alt=""
+                /></a>
+              </td>
+              <td>
+                Fun game, need to try....... <br />
+                <a
+                  href="https://www.playstation.com/en-ca/games/astro-bot-rescue-mission/"
+                  >Know More</a
+                >
+              </td>
               <td>2023/1/10</td>
               <td>
-                <button class="btn btn-primary">Register as tester</button>
+                <a href="register.html"
+                  ><button class="btn btn-primary">
+                    Register to be tester
+                  </button></a
+                >
               </td>
             </tr>
             <tr>
-              <td><img src="images/games/games.jpg" alt="" /></td>
+              <td>
+                <img src="images/games/games.jpg" class="table-img" alt="" />
+              </td>
               <td>Fun game, need to try.......</td>
               <td>2023/1/10</td>
               <td>
-                <button class="btn btn-primary">Register as tester</button>
+                <a href="register.html"
+                  ><button class="btn btn-primary">
+                    Register to be tester
+                  </button></a
+                >
               </td>
             </tr>
             <tr>
-              <td><img src="images/games/games.jpg" alt="" /></td>
+              <td>
+                <img src="images/games/games.jpg" class="table-img" alt="" />
+              </td>
               <td>Fun game, need to try.......</td>
               <td>2023/1/10</td>
               <td>
-                <button class="btn btn-primary">Register as tester</button>
+                <a href="register.html"
+                  ><button class="btn btn-primary">
+                    Register to be tester
+                  </button></a
+                >
               </td>
             </tr>
           </table>
@@ -181,6 +356,123 @@
           </figure>
         </div>
       </section>
+      <section>
+        <div class="container">
+          <h3>My Game Collection</h3>
+          <table class="table">
+            <tr>
+              <th>#</th>
+              <th id="collection-th">Game</th>
+              <th id="collection-th">Online time</th>
+              <th id="collection-th">Click counts</th>
+              <th id="collection-th">My rating</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                <img
+                  src="images/games/roblox.jpg"
+                  alt="roblox"
+                  class="table-img"
+                />
+              </td>
+              <td>12h30min</td>
+              <td>25 clicks</td>
+              <td>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img
+                  src="images/games/minecraft.webp"
+                  alt="roblox"
+                  class="table-img"
+                />
+              </td>
+              <td>12h30min</td>
+              <td>25 clicks</td>
+              <td>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <img
+                  src="images/games/roblox.jpg"
+                  alt="roblox"
+                  class="table-img"
+                />
+              </td>
+              <td>12h30min</td>
+              <td>25 clicks</td>
+              <td>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star star-checked"></span>
+                <span class="fa fa-star-half-o star-checked"></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <h3>Top Recommandations</h3>
+          <div class="row">
+            <div class="col col-3">
+              <img class="reco-img" src="images/games/3.jpg" alt="" />
+            </div>
+            <div class="col col-6">
+              <h3>Worth to try</h3>
+              <p>Really fun Game, 100% Worth to try.</p>
+              <span class="fa fa-star star-checked"></span>
+              <span class="fa fa-star star-checked"></span>
+              <span class="fa fa-star star-checked"></span>
+              <span class="fa fa-star star-checked"></span>
+              <span class="fa fa-star star-checked"></span>
+            </div>
+            <div class="col col-3">
+              <h4>Game Tester:</h4>
+              <p><i>Carlos C</i></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+                <div class="contact-me text-center">
+          <h2>About</h2>
+          <h3></h3>
+          <p>
+            If you like playing games, welcome to join in our team.
+          </p>
+        </div>
+      </div>
+ 
+      <div class="btn-group">
+        <a
+          class="btn btn-info"
+          href="https://www.linkedin.com/in/weiguang-yang-b82916158/"
+          >LinkedIn</a
+        >
+        <a class="btn btn-primary" href="https://twitter.com/yang_weiguang"
+          >Twitter</a
+        >
+        <a class="btn btn-dark" href="index.html">Website</a>
+        <a class="btn btn-primary" href="mailto:weiguangy2022@gmail.com"
+          >EMAIL ME</a
+        >
+      </div>
+    </section>
     </main>
   </body>
   <script>
@@ -217,4 +509,5 @@
       dots[slideIndex - 1].className += " active";
     }
   </script>
+  <footer class="text-center">Copyright©2023 Weiguang Yang 1995991</footer>
 </html>

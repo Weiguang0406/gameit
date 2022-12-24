@@ -1,24 +1,30 @@
 body {
   background-color: #ffffff;
   text-align: center;
+  background-image: url(images/rock-climbing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
   font-size: 25px;
   font-weight: bold;
   font-family: "Audiowide", sans-serif;
-  color: #66bfbf;
+  color: #000000;
 }
 
 h2 {
-  color: #66bfbf;
+  color: #068c9e;
+  padding: 20px 0px 30px 0px;
 }
 h3 {
-  color: #11999e;
+  color: #01767a;
+  padding: 20px 0px 30px 0px;
 }
 p {
   color: black;
-  font-size: 1em;
+  font-size: 20px;
   font-family: "Rubik", sans-serif;
 }
 article,
@@ -41,11 +47,24 @@ summary {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 } */
-.top-container {
-  background-color: #e0ebe8;
-  margin: auto auto auto auto;
+.header-sec {
+  background-color: rgb(224, 235, 232, 0.5);
 }
-
+.profile-sec {
+  background-color: rgb(8, 5, 1, 0.5);
+}
+.profile-sec p {
+  color: white;
+}
+.skills-sec {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.work-sec {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+.contact-sec {
+  background: rgb(0, 0, 0, 0.3);
+}
 #header-logo {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
@@ -98,6 +117,10 @@ summary {
   background-color: #e4dede;
   text-decoration-line: underline;
 }
+
+#bv-icon {
+  height: 60%;
+}
 .profile-img {
   border-radius: 50%;
   width: 20%;
@@ -111,19 +134,41 @@ summary {
 }
 
 .skill-img {
-  width: 10rem;
+  width: 80%;
   height: auto;
-  float: left;
-  margin-right: 30px;
+  margin-right: 10%;
+  border-radius: 10%;
+  /* margin-top: 35%; */
 }
 
-.skill2-img {
+.work-img {
   border-radius: 50%;
-  width: 10rem;
-  float: right;
-  margin-left: 30px;
+  width: 80%;
+  margin: 15% auto 15% auto;
+  /* margin-top: 35%; */
 }
 
 .contact-me {
 }
 
+@media screen {
+}
+@media {
+  nav .top-nav {
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  div .skill-img {
+    width: 50%;
+  }
+  div .work-img {
+    width: 50%;
+  }
+  p {
+    font-size: 16px;
+  }
+}
