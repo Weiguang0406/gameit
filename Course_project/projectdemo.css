@@ -139,11 +139,13 @@ nav .flex {
   gap: var(--gap, 2rem);
 }
 nav {
-  background-color: silver;
+  background-color: rgb(192, 192, 192, 0.8);
 }
 .nav a:hover {
   color: white;
   font-weight: 500;
+  text-decoration: underline;
+  text-shadow: rgb(14, 5, 5);
 }
 
 /* .primary-header {

@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="course_project.css" />
+    <link rel="stylesheet" href="projectdemo.css" />
     <title>GameIt</title>
   </head>
   <style>
@@ -24,12 +25,59 @@
     }
   </style>
   <body>
-    <nav class="nav">
+    <nav class="nav flex">
       <div>
-        <a href="my_project.html"
+        <a href="my_project_index.html"
           ><button class="btn btn-danger logo-design">LOGO</button></a
         >
       </div>
+
+      <div class="top-nav">
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="nav flex primary-navigation"
+        >
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"
+              ><span aria-hidden="true">Home</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="allgames.html"
+              ><span aria-hidden="true">All Games</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myspace.html"
+              ><span aria-hidden="true">My Space</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="myfriends.html"
+              ><span aria-hidden="true">My Friends</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><span aria-hidden="true">How it work</span></a
+            >
+          </li>
+          <li>
+            <button class="btn btn-info">
+              <a href="signin.html"> Sign In</a>
+            </button>
+          </li>
+          <li>
+            <button class="btn btn-light">
+              <a href="register.html">Register</a>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false"></span>
+      </button>
     </nav>
     <main>
       <section>
