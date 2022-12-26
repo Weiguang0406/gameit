@@ -1,9 +1,61 @@
 /* Weiguang Yang */
 body {
   background-color: rgb(137, 207, 235, 0.1);
+  background-image: url(images/body-background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.top-sec {
+  background-color: rgba(183, 235, 235, 0.75);
+}
+.middle-sec {
+  background-color: rgb(26, 188, 156, 0.5);
+}
+.bottom-sec {
+  background-color: rgba(61, 174, 70, 0.5);
 }
 h1 {
   padding: 10px 0px 20px 0px;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  font-weight: 700;
+}
+h1:hover {
+  text-shadow: var(--color-2);
+  text-decoration: underline;
+}
+h2:hover {
+  text-shadow: var(--color-2);
+  text-decoration: underline;
+}
+h3:hover {
+  text-shadow: var(--color-2);
+  text-decoration: underline;
+}
+
+td {
+  font-size: 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  background-color: #e4a9a8;
+}
+td:hover {
+  color: white;
 }
 .header {
   padding: 30px;
@@ -75,23 +127,75 @@ h1 {
   font-size: 2rem;
   text-transform: uppercase;
 }
-* {
-  box-sizing: border-box;
-}
 
 .logo-design {
   font-family: Pacifico;
 }
 .top-nav {
-  position: relative;
   float: right;
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
 }
+nav .flex {
+  display: flex;
+  gap: var(--gap, 2rem);
+}
+nav {
+  background-color: silver;
+}
+.nav a:hover {
+  color: white;
+  font-weight: 500;
+}
+
+/* .primary-header {
+  align-items: right;
+} */
+
+.primary-navigation {
+  --gap: 2rem;
+  --underline-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+@media (max-width: 35em) {
+  .primary-navigation {
+    color: black;
+    --gap: 2em;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 8rem) 2em;
+    background: hsl(0 0% 100%/0.8);
+    transform: translateX(100%);
+    transition: transform 350ms ease-out;
+  }
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    margin-top: 180px;
+    background-image: url(images/hamburger-icon.png);
+    background-size: cover;
+    width: 2rem;
+    background-repeat: no-repeat;
+    border: 0;
+    z-index: 9999;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -99,6 +203,8 @@ h1 {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
 }
 
 /* Next & previous buttons */
@@ -189,6 +295,16 @@ h1 {
   margin-right: auto;
   width: 50%;
   height: auto;
+  border-radius: 10%;
+  /* transition: width 200ms; */
+  transition: 1s ease;
+}
+
+.gallary-img:hover {
+  -webkit-transform: scale(1.35);
+  -ms-transform: scale(1.35);
+  transform: scale(1.35);
+  transition: 1s ease;
 }
 
 .quote-banner {
@@ -207,6 +323,7 @@ h1 {
   height: auto;
   vertical-align: middle;
   margin-left: 15%;
+  border-radius: 10%;
 }
 .reco-img {
   width: 85%;

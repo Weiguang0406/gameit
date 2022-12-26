@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
 }
 
 h1 {
@@ -66,8 +67,7 @@ summary {
   background: rgb(0, 0, 0, 0.3);
 }
 #header-logo {
-  margin: 0px 0px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  margin: 2rem;
   width: 30%;
   height: 72px;
   float: left;
@@ -84,6 +84,22 @@ summary {
   box-sizing: border-box;
   display: block;
   justify-content: space-between;
+}
+.primary-navigation {
+  --gap: 8rem;
+  --underline-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
 }
 #top-nav {
   position: relative;
@@ -171,4 +187,7 @@ summary {
   p {
     font-size: 16px;
   }
+}
+
+@media screen and (max-width: 480) {
 }
